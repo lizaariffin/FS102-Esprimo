@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esprimo</title>
+
+  <!--css custom -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Bootstrap css and JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!--footer link-->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="StyleiTechFooter.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a class="navbar-brand" href="index.html"><img src="images/esprimo_logo_white.png" alt="company-logo"></a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services2.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <!-- wave animation -->
+  <div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+
+      <!--contact form -->
+      <section id="contact">
+
+
+        <div class="contact-wrapper">
+
+          <!-- Left contact page -->
+
+          <form id="contact-form" class="form-horizontal" role="form">
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            </button>
+          </form>
+          <div class="direct-contact-container">
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">19
+                    Ubi Crescent,408577</span></i></li>
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                      href="tel:1-212-555-5555" title="Give me a call">(65) 6748
+                      8870</a></span></i></li>
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                      title="Send me an email">events@esprimo.com.sg</a></span></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+  </div>
+
+  <!--back to top-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- footer -->
+  <div id="footer">
+    <div id="utility-links">
+
+      <div class="help">
+        <ul>
+          <h3 class="left">Need Help?</h3>
+          <li><a href="contact.html">Hire Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><img class="help-img-icon" width="18" height="14"
+              src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469462241/msg_jn0whe.svg" </img><a
+              href="contact.html">Live Chat</a></li>
+          <li><img class="help-img-icon" width="15" height="15"
+              src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469462243/phone_zfj4ey.svg" </img><a
+              href="contact.html">(65) 6748 8870</a></li>
+        </ul>
+      </div>
+
+
+      <div class="rectangle"></div>
+
+      <div class="about">
+        <ul>
+          <h3 class="left">About Esprimo</h3>
+          <li><a href="services2.html">Company Information</a></li>
+          <li><a href="services2.html">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="rectangle"></div>
+
+      <div class="card">
+        <ul>
+          <h3 class="left">Core Services</h3>
+          <li><a href="services2.html">Facilities Management</a></li>
+          <li><a href="services2.html">Safe Management Operations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="newsletter-social">
+      <div id="newsletter">
+        <h3 class="center">Subscribe to our Newsletter</h3>
+        <form>
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+
+
+      <div id="social">
+        <a href="https://facebook.com" target="_blank">
+          <img width="34" height="34"
+            src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/facebook_khedl5.svg"></a></img>
+
+        <a href="https://twitter.com" target="_blank">
+          <img width="34" height="34"
+            src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/twitter_fu5ejk.svg"></a></img>
+
+        <a href="hhttps://pinterest.com" target="_blank">
+          <img width="34" height="34"
+            src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/pinterest_kahh1i.svg"></a></img>
+
+        <a href="https://www.youtube.com" target="_blank">
+          <img width="34" height="34"
+            src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/youtube_xrntt3.svg"></a></img>
+
+        <a href="http://instagram.com" target="_blank">
+          <img width="34" height="34"
+            src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/instagram_ugek0w.svg"></a></img>
+
+      </div>
+    </div>
+
+    <div class="rectangle-horiz"></div>
+
+    <div id="copyright">
+      <ul>
+        <li class="copy">© 2022 Esprimo Pte Ltd. All Rights Reserved.</li>
+
+        <li class="copy">Privacy Policy | Terms + Conditions | Sitemap</li>
+
+        <li class="copy">19 Ubi Crescent 408577</li>
+
+    </div>
+
+  </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

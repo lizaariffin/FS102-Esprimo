@@ -79,7 +79,15 @@ bottom: 0;
 width:100%;
 height: auto;
 overflow:hidden;
-position:absolute;
+position:absolute;@media (max-width: 767px) {
+  #videoBG {
+      display: none;
+  }
+  body {
+      background: url('poster.jpg');
+      background-size: cover;
+  }
+}
 top:0;
 left:0;
 background-size: cover;
